@@ -1,25 +1,19 @@
-print("Hello, Python! Welcome to #100DaysOfCode")
+print("Day 1 — Python Basics")
 
-name = 'Ratan'
-age = 22
-pi = 3.14
-is_Graduated = True
-
-print("Hellow, This is", name, " and i am ",age,"years old")
-print("I graduated in September 2025 is:" , is_Graduated)
-
-
-print("Welcome to Day 1!")
-print("Python is fun!")
-print("I am learning Python.")
-
-
+# Variables
 name = "Ratan"
 age = 25
-price = 199.99
-is_student = True
+pi = 3.14
+is_active = True
 
-print(name)
-print(age)
-print(price)
-print(is_student)
+print("Variables and their types:")
+print(name, type(name))
+print(age, type(age))
+print(pi, type(pi))
+print(is_active, type(is_active))
+
+# User input
+user_name = input("Enter your name: ")
+user_age = input("Enter your age: ")
+
+print(f"Hello {user_name}, you are {user_age} years old.")

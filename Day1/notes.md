@@ -109,11 +109,11 @@ Focus today on:
 ```
 100DaysOfCode/
 │
-├── Day01/
-│   ├── Day1.md
-│   ├── day1.py
-│   ├── exercises_day1.md
-│
+├── Day1/
+│   ├── notes.md
+│   ├── code.py
+│   ├── practice.py
+│   ├── exercise.py
 └── README.md
 ```
 

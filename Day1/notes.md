@@ -113,7 +113,6 @@ Focus today on:
 │   ├── notes.md
 │   ├── code.py
 │   ├── practice.py
-│   ├── exercise.py
 └── README.md
 ```
 

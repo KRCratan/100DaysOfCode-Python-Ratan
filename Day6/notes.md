@@ -181,3 +181,105 @@ Output
 23
 26
 29
+
+## Else in For Loop
+The `else` keyword in a `for` loop specifies a block of code to be executed when the loop is finished:
+
+Example
+Print all numbers from 0 to 5, and print a message when the loop has ended:
+```python
+for x in range(6):
+  print(x)
+else:
+  print("Finally finished!")
+```
+Output
+0
+1
+2
+3
+4
+5
+Finally finished!
+
+***Note: The `else` block will NOT be executed if the loop is stopped by a `break` statement.***
+
+Example
+Break the loop when x is 3, and see what happens with the else block:
+```python
+for x in range(6):
+  if x == 3: break
+  print(x)
+else:
+  print("Finally finished!")
+```
+Output
+0
+1
+2
+
+## Nested Loops
+- A nested loop is a loop inside a loop.
+
+- The "inner loop" will be executed one time for each iteration of the "outer loop":
+
+Example
+Print each adjective for every fruit:
+```python
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+for x in adj:
+  for y in fruits:
+    print(x, y)
+```
+Output
+red apple
+red banana
+red cherry
+big apple
+big banana
+big cherry
+tasty apple
+tasty banana
+tasty cherry
+
+## The pass Statement
+- `for` loops cannot be empty, but if you for some reason have a `for` loop with no content, put in the `pass` statement to avoid getting an error.
+
+Example:
+```python
+for x in [0, 1, 2]:
+  pass
+# having an empty for loop like this, would raise an error without the pass statement
+```
+
+## While Loop
+In Python, a `while loop` is used to execute a block of statements repeatedly until a given condition is satisfied. When the condition becomes false, the line immediately after the loop in the program is executed.
+
+In below code, loop runs as long as the condition cnt < 3 is true. It increments the counter by 1 on each iteration and prints "Hello Geek" three times
+```python
+cnt = 0
+while (cnt < 3):
+    cnt = cnt + 1
+    print("Hello Geek")
+```
+Output
+Hello Geek
+Hello Geek
+Hello Geek
+![alt text](image-1.png)
+
+## Infinite While Loop
+If we want a block of code to execute infinite number of times then we can use the while loop in Python to do so.
+
+Code given below uses a 'while' loop with the condition "True", which means that the loop will run infinitely until we break out of it using "break" keyword or some other logic.
+```python
+while (True):
+    print("Hello Geek")
+```
+***Note: It is suggested not to use this type of loop as it is a never-ending infinite loop where the condition is always true and we have to forcefully terminate the compiler.***
+
+
+## Loop Control Statements
+Loop control statements change execution from their normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed. Python supports the following control statements

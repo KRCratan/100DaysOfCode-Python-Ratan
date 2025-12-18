@@ -162,4 +162,54 @@ Output
 Error: 'pop from an empty set'
 
 ## Using clear() Method
+- clear() method removes all elements from the set, leaving it empty.
+```python
+set1 = {1, 2, 3, 4, 5}
+set1.clear()
+print(set1)
+```
+Output
+set()
+
+## Frozen Sets in Python
+A frozenset in Python is a built-in data type that is similar to a set but with one key difference that is immutability. This means that once a frozenset is created, we cannot modify its elements that is we cannot add, remove or change any items in it. Like regular sets, a frozenset cannot contain duplicate elements.
+
+If no parameters are passed, it returns an empty frozenset.  
+```python
+# Creating a frozenset from a list
+fset = frozenset([1, 2, 3, 4, 5])
+print(fset)  
+
+# Creating a frozenset from a set
+set1 = {3, 1, 4, 1, 5}
+fset = frozenset(set1)
+print(fset)
+```
+Output
+frozenset({1, 2, 3, 4, 5})
+frozenset({1, 3, 4, 5})
+
+## Typecasting Objects into Sets
+Typecasting objects into sets in Python refers to converting various data types into a set. Python provides the set() constructor to perform this typecasting, allowing us to convert lists, tuples and strings into sets.
+```python
+# Typecasting list into set
+li = [1, 2, 3, 3, 4, 5, 5, 6, 2]
+set1 = set(li)
+print(set1)
+
+# Typecasting string into set
+s = "GeeksforGeeks"
+set1 = set(s)
+print(set1)
+
+# Typecasting dictionary into set
+d = {1: "One", 2: "Two", 3: "Three"}
+set1 = set(d)
+print(set1)
+```
+
+Output
+{1, 2, 3, 4, 5, 6}
+{'f', 'G', 's', 'k', 'r', 'e', 'o'}
+{1, 2, 3}
 

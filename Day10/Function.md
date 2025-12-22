@@ -217,3 +217,74 @@ print(factorial(4))
 Output
 24
 Here we have created a recursive function to calculate the factorial of the number. It calls itself until a base case (n==0) is met.
+
+## pass Statement
+The pass statement in Python is a placeholder that does nothing when executed.
+
+- It is used to keep code blocks valid where a statement is required but no logic is needed yet.
+- Examples situations where pass is used are empty functions, classes, loops or conditional blocks.
+
+### In Functions
+The pass keyword in a function is used when we define a function but don't want to implement its logic immediately. It allows the function to be syntactically valid, even though it doesn’t perform any actions yet.
+```python
+def fun():
+    pass
+
+fun() # Call the function
+```
+Explanation: fun() is defined but contains pass statement, so it does nothing when called and program continues execution without any errors.
+
+### In Conditional Statements
+Sometimes, when using conditional statements we may not want to perform any action for a condition but still need the block to exist. The pass statement ensures the code remains valid without adding logic.
+```python
+x = 10
+
+if x > 5:
+    pass  # Placeholder for future logic
+else:
+    print("x is 5 or less")
+```
+Explanation:
+- When x > 5, the pass statement runs, so nothing happens.
+- If x <= 5, else block executes and prints the message.
+
+### In Loops
+In loops, pass can be used to skip writing any action during a specific iteration while still keeping the loop structure correct.
+```python
+for i in range(5):
+    if i == 3:
+        pass  # Do nothing when i is 3
+    else:
+        print(i)
+```
+Output
+0
+1
+2
+4
+
+Explanation:
+- For i == 3, the pass statement ensures nothing happens.
+- For other values, the loop prints the number.
+
+### In Classes
+The pass statement allows defining empty classes or methods that act as placeholders until actual functionality is added later.
+```python 
+class EmptyClass:
+    pass  # No methods or attributes yet
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    def greet(self):
+        pass  # Placeholder for greet method
+
+# Creating an instance of the class
+p = Person("Emily", 30)
+```
+
+Explanation:
+- EmptyClass is valid even without methods or attributes because of pass.
+- greet() method exists but does nothing yet, letting us build the structure first.
